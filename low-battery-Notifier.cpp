@@ -1,3 +1,12 @@
+/* Description : A simple C++ tool/script, that will notify you when your laptop battery is low, this tool is currently working for windows only.This tool is one of my starter projects.
+
+   Author : KALI : THE HACKER ™ (Lucky verma)
+   Date : This Project is started and completed on - August 02, 2021.
+   
+   Note : You are allowed to use your skills to make this tool even more better.
+   
+  */
+
 #include <iostream>
 #include <windows.h>
 
