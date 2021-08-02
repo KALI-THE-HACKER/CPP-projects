@@ -14,18 +14,29 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     int percent;
+    cout<<"     Battery-Low Notifier Started...\n \n     Please Do not close this window!\n\n     AUTHOR : KALI : THE HACKER (Luckyverma-sudo)"<<endl;
+    
     while(true){
 
         SYSTEM_POWER_STATUS spsPwr;
         if( GetSystemPowerStatus(&spsPwr) ) {
 
             percent = static_cast<double>(spsPwr.BatteryLifePercent);
-            // cout<<"Percent : "<<percent<<endl;
-            // cout<<typeid(percent).name()<<endl<<endl;
-            if (percent<=14)
+            if (percent<=13)
             {
-                cout<<"Battery Low\n";
+                cout<<"\n\n       !!Battery Low.....Battery Low.....Battery Low!!\n";
                 system("msg * Hey KALI, your laptop's battery is low, plug it into power!");
+
+                int j = 0;
+                while(j!=7){
+                    j++;
+                    for (int i = 0; i < 2; i++){
+                        Beep(2000, 180);
+                    }
+                    for (int i = 0; i < 2; i++){
+                        Beep(400, 380);
+                    }
+                }
                 break;
             }
                 
